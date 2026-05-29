@@ -44,4 +44,10 @@ em várias linhas como anteriormentes.
 # import operadores.relacionais_aula
 # import operadores.atribuicao_aula
 # import operadores.logicos_aula
-import operadores.ternario_aula
+# import operadores.ternario_aula
+
+# import controle.if_1_aula
+# import controle.if_2_aula
+# import controle.for_1_aula
+# import controle.while_1_aula
+import controle.outros_exemplos_aula
