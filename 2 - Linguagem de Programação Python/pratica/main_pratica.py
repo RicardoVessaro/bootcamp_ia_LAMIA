@@ -7,4 +7,4 @@ if __name__ == '__main__':
     jogo = Jogo()
     jogo.configurar()
     jogo.iniciar()
-    jogo.jogar_rodada()
+    jogo.jogar()

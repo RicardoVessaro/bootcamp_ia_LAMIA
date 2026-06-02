@@ -276,6 +276,44 @@ class TestJogo(unittest.TestCase):
         self.assertEqual(1, self.__jogador('J2').pontos)
         self.assertEqual(0, self.__jogador('J3').pontos)
 
+    @patch('builtins.print')
+    def test_permitir_jogador_sair_do_jogo_apos_o_fim_da_rodada(self, mock_print):
+        """Verifica se o usuário pode sair do jogo sem ter que terminar a 
+        execução do programa."""
+
+        # inicalizar o jogo
+        self.__inicar_jogo()
+
+
+        quantidade_cartas = '1' # resposta para a quantiade de cartas.
+        continuar_jogando = 's' # resposta para continuar jogando e jogar mais
+                                # uma rodada.
+        resposta_invalida = 'a' # resposta inválida para que exija uma resposta
+                                # válida
+        sair_do_jogo = 'n'  # resposta para sair do jogo
+        # define as respostas do inputs com `side_effect` [6].
+        with patch('builtins.input', side_effect = [
+            quantidade_cartas, continuar_jogando, quantidade_cartas, 
+            resposta_invalida, sair_do_jogo]) as mock_input:
+
+            self.jogo.jogar()
+
+        # Confere se a pergunta foi feita de forma esperada.
+        chamadas_input = [
+            call('Deseja continuar jogando (s/n)? '),
+        ]
+        mock_input.assert_has_calls(chamadas_input, any_order=True)
+
+        # Confere se as respostas foram mostradas para o usuário.
+        chamadas_print = [
+            call('Resposta inválida, responda com "s" para sim e "n" para não.'),
+            call('Jogo finalizado!'),
+        ]
+        mock_print.assert_has_calls(chamadas_print, any_order=True)
+
+        # Verifica se o jogo foi finalizado.
+        self.assertTrue(self.jogo.jogo_finalizado())
+        
     def __inicar_jogo(self):
         """Inicia o jogo configurando conforme os requisitos para não ter que repetir
         o código a cada cenário de teste."""

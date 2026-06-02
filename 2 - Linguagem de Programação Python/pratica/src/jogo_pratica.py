@@ -22,15 +22,13 @@ class ErroRodada(Exception):
 class StatusJogo(Enum):
     """Classe `StatusJogo` utilizado para saber a situação do jogo como um
     histórico com base em seus valores, começando em `NAO_CONFIGURADO` (0) indo até
-    `FINALIZADO` (4), podendo alternar entre `EM_JOGO` e `INCIADO` após ter
-    sido `CONFIGURADO`.
+    `FINALIZADO` (3).
     
     A classe herda a `Enum` para que se comporte como um enumeration conforme [1]."""
     NAO_CONFIGURADO = 0
     CONFIGURADO = 1
     INICIADO = 2
-    EM_JOGO = 3
-    FINALIZADO = 4
+    FINALIZADO = 3
 
 class Jogo:
     """Classe que trata funcionalidades relacioandas ao andamento do jogo."""
@@ -71,6 +69,30 @@ class Jogo:
 
         self.__status = StatusJogo.INICIADO
         print("Jogo iniciado!")
+
+    def jogar(self):
+        continuar_jogo = True
+        while continuar_jogo:
+            self.jogar_rodada()
+
+            while True:
+                continuar_jogando = input('Deseja continuar jogando (s/n)? ')
+
+                if continuar_jogando == 's':
+                    continuar_jogo = True
+                    break
+                elif continuar_jogando == 'n':
+                    continuar_jogo = False
+                    break
+                else :
+                    print('Resposta inválida, responda com "s" para sim e "n" para não.')
+        
+        self.sair()
+
+    def sair(self):
+        print('Jogo finalizado!') 
+        print('Saindo...')
+        self.__status = StatusJogo.FINALIZADO
 
     def jogar_rodada(self):
         """Uma roada é jogada, onde as cartas são entregues para os jogadores e
@@ -415,5 +437,9 @@ class Jogo:
         return self.__status == StatusJogo.CONFIGURADO
     
     def jogo_iniciado(self):
-        """Retorna verdadiero quando o status do jogo é `INICIADO`"""
+        """Retorna verdadeiro quando o status do jogo é `INICIADO`."""
         return self.__status == StatusJogo.INICIADO
+    
+    def jogo_finalizado(self):
+        """Retorna verdadeiro quando o status do jogo é `FINALIZADO`."""
+        return self.__status == StatusJogo.FINALIZADO 
