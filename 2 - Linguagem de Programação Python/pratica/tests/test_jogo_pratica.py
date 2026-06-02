@@ -187,7 +187,6 @@ class TestJogo(unittest.TestCase):
         with patch('builtins.input', return_value = quantidade_oponentes):
             self.jogo.configurar()
 
-
         with self.assertRaises(ErroRodada) as err:
             self.jogo.quantidade_cartas_rodada = 0
         self.assertEqual(str(err.exception), "A quantidade de cartas na rodada deve ser pelo menos 1.")
@@ -195,6 +194,11 @@ class TestJogo(unittest.TestCase):
         with self.assertRaises(ErroRodada) as err:
             self.jogo.quantidade_cartas_rodada = 14
         self.assertEqual(str(err.exception), "A quantidade máxima de cartas na rodada é de 13.")
+
+        with self.assertRaises(ErroRodada) as err:
+            self.jogo.quantidade_cartas_rodada = 2
+        self.assertEqual(str(err.exception), "Não é possível escolher uma " \
+            "quantia par de cartas, escolha uma quantia ímpar para que não aconteça empate.")
 
     def test_deve_permitir_jogar_a_rodada_apenas_quando_jogo_iniciado(self):
         """Verifica se a rodada pode ser jogada apenas depois do jogo iniciado."""
@@ -213,9 +217,8 @@ class TestJogo(unittest.TestCase):
 
         jogadores = self.jogo._Jogo__jogadores
 
-        # PAROU EM:
         for id, jogador in jogadores.items():
-            self.assertEquals(int(quantidade_cartas), len(jogador.mao))
+            self.assertEqual(int(quantidade_cartas), len(jogador.mao))
             for carta in jogador.mao:
                 self.assertTrue(isinstance(carta, Carta))
 
@@ -313,6 +316,21 @@ class TestJogo(unittest.TestCase):
 
         # Verifica se o jogo foi finalizado.
         self.assertTrue(self.jogo.jogo_finalizado())
+
+    def teste_de_estresse_do_jogo(self):
+        """Teste iterando o jogo várias vezes para ver se algum erro acontece."""
+
+        # inicalizar o jogo
+        self.__inicar_jogo()
+
+        quantiade_cartas = '3'
+        continuar_jogando = 's'
+        encerrar_jogo = 'n'
+        # Retorna uma lista entre ['3', 's', 3', 's', 3', 's', 3', 's' ... ] 
+        # para continuar jogando, no fim 'n' para sair do jogo.
+        side_effect = [ quantiade_cartas if i % 2 != 0 else continuar_jogando for i in range(1, 100) ] + [ encerrar_jogo ]
+        with patch('builtins.input', side_effect = side_effect):
+            self.jogo.jogar()
         
     def __inicar_jogo(self):
         """Inicia o jogo configurando conforme os requisitos para não ter que repetir

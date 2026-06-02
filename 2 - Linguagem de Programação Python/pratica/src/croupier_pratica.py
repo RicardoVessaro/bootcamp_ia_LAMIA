@@ -83,3 +83,7 @@ class Croupier:
     def entregar_carta(self, jogador):
         """Remove uma carta do topo do baralho e entrega para a mão do jogador."""
         jogador.mao.append(self.__baralho.pop(0))
+
+    def devolver_ao_baralho(self, cartas):
+        """Devolve as cartas para o fundo do baralho."""
+        self.__baralho.extend(cartas)

@@ -74,6 +74,7 @@ class Jogo:
         continuar_jogo = True
         while continuar_jogo:
             self.jogar_rodada()
+            self.__devolver_cartas()
 
             while True:
                 continuar_jogando = input('Deseja continuar jogando (s/n)? ')
@@ -118,6 +119,16 @@ class Jogo:
                 self.__croupier.entregar_carta(jogador)
 
         self.__contabilizar_rodada()
+
+    def __devolver_cartas(self):
+        """Devolve as cartas do jogadores para o baralho do croupier"""
+        cartas_utilizadas = []
+
+        for jogador in self.__jogadores.values():
+            cartas_utilizadas += jogador.mao[:]
+            jogador.mao[:] = []
+        
+        self.__croupier.devolver_ao_baralho(cartas_utilizadas)
 
     def __contabilizar_rodada(self): 
         """A rodada é definida pela comparação de várias cartas na ordem em que
@@ -273,13 +284,15 @@ class Jogo:
         # Icrementa a quantidade de pontos para o jogador vencedor da rodada.
         self.__jogadores[id_jogador_vencedor_rodada].pontos += 1
 
+        print(f'\n{id_jogador_vencedor_rodada} venceu está rodada!')
+
         self.__mostrar_placar()
 
     def __mostrar_placar(self):
         """Mostra o placar após o fim da última rodada"""
 
         # Utilizando um laço `for` ao invés do `reduce` sendo mais comum.
-        placar = '\nPlacar Atual:\n'
+        placar = 'Placar Atual:\n'
         for jogador in self.__jogadores.values():
             # Diferença de um retorno para o outro está na quantidade de espaços
             if jogador.id == Jogo.ID_JOGADOR_USUARIO:
@@ -288,7 +301,6 @@ class Jogo:
                 placar += f' {jogador.id}   [{jogador.pontos}] '
 
         # mostra em um caso que o jogador do usuário pontuou:
-        #
         # Placar Atual: 
         #  Você [1]  J1   [0]  J2   [0]  J3   [0]
         print(placar)
@@ -424,8 +436,10 @@ class Jogo:
             raise ErroRodada("A quantidade de cartas na rodada deve ser pelo menos 1.")
         elif quantidade_cartas_rodada > self.__quantidade_maxima_cartas:
             raise ErroRodada(f'A quantidade máxima de cartas na rodada é de {self.__quantidade_maxima_cartas}.')
+        elif quantidade_cartas_rodada % 2 == 0:
+            raise ErroRodada("Não é possível escolher uma " \
+            "quantia par de cartas, escolha uma quantia ímpar para que não aconteça empate.")
         
-
         self.__quantidade_cartas_rodada = quantidade_cartas_rodada
 
     def jogo__nao_configurado(self):
