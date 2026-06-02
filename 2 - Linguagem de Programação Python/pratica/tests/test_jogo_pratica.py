@@ -195,11 +195,6 @@ class TestJogo(unittest.TestCase):
             self.jogo.quantidade_cartas_rodada = 14
         self.assertEqual(str(err.exception), "A quantidade máxima de cartas na rodada é de 13.")
 
-        with self.assertRaises(ErroRodada) as err:
-            self.jogo.quantidade_cartas_rodada = 2
-        self.assertEqual(str(err.exception), "Não é possível escolher uma " \
-            "quantia par de cartas, escolha uma quantia ímpar para que não aconteça empate.")
-
     def test_deve_permitir_jogar_a_rodada_apenas_quando_jogo_iniciado(self):
         """Verifica se a rodada pode ser jogada apenas depois do jogo iniciado."""
 
@@ -278,6 +273,24 @@ class TestJogo(unittest.TestCase):
         self.assertEqual(0, self.__jogador('J1').pontos)
         self.assertEqual(1, self.__jogador('J2').pontos)
         self.assertEqual(0, self.__jogador('J3').pontos)
+
+        # Quarta rodada onde há um empate, neste caso ambos os jogadores pontuam
+        self.jogo.quantidade_cartas_rodada = 2
+
+        self.__jogador('Você').mao = [Carta(Naipe.PAUS, Valor.AS), Carta(Naipe.COPAS, Valor.REI)]
+        self.__jogador('J1').mao = [Carta(Naipe.COPAS, Valor.OITO), Carta(Naipe.OURO, Valor.AS)]
+        self.__jogador('J2').mao = [Carta(Naipe.OURO, Valor.SETE), Carta(Naipe.COPAS, Valor.TRES)]
+        self.__jogador('J3').mao = [Carta(Naipe.PAUS, Valor.TRES), Carta(Naipe.COPAS, Valor.AS)]
+
+        self.jogo._Jogo__contabilizar_rodada()
+        
+        # Verifica se os jogadores mantiveram seus pontos e os vencedores 
+        # ganharam um ponto cada.
+        self.assertEqual(3, self.__jogador('Você').pontos)
+        self.assertEqual(0, self.__jogador('J1').pontos)
+        self.assertEqual(1, self.__jogador('J2').pontos)
+        self.assertEqual(1, self.__jogador('J3').pontos)
+
 
     @patch('builtins.print')
     def test_permitir_jogador_sair_do_jogo_apos_o_fim_da_rodada(self, mock_print):

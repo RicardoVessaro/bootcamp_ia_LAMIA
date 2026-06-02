@@ -260,32 +260,61 @@ class Jogo:
 
             # Tratativa para o primeiro item do `reduce` semelhante com 
             # `definir_jogador_carta_maior`.
-            if id_vencedor_atual is None:
-                return id_jogador
+            if len(id_vencedor_atual) == 0:
+                # Retorna uma lista pois pode haver mais de um jogador vencedor
+                # na rodada
+                return [id_jogador]
             
             # Reutiliza a função `buscar_cartas_vencidas` do inicio para definir
             # as cartas vencidas do vencedor atual.
-            cartas_vencidas_vencedor_atual = buscar_cartas_vencidas(id_vencedor_atual)
+            # Busca o id_vencedor_atual no indice 0 pois é uma lista de jogadores
+            # que estão vencendo a rodada
+            cartas_vencidas_vencedor_atual = buscar_cartas_vencidas(id_vencedor_atual[0])
             cartas_vencidas_jogador = buscar_cartas_vencidas(id_jogador)
 
             # Se o jogador da iteração possui mais cartas vencidas que o 
             # vencedor atual ele se torna o novo vencedor atual para a próxima 
             # iteração.
             #
-            # Ao final retorna o id do jogador vencedor.
+            # Caso a quantidade de cartas vencidas seja igual ambos que o jogador
+            # com maior cartas vencidas, então ambos os jogadores são considerados
+            # como jogadores vencedores.
+            # 
+            # Ao final retorna a lista de ids dos jogadores vencedores.
             if cartas_vencidas_jogador > cartas_vencidas_vencedor_atual:
-                return id_jogador
-            
-            return id_vencedor_atual
+                return [id_jogador]
+            elif cartas_vencidas_jogador == cartas_vencidas_vencedor_atual:
+                id_vencedor_atual.append(id_jogador)
+                return id_vencedor_atual
+            else :
+                return id_vencedor_atual
         
         # Chama a função `definir_jogador_vencedor_rodada` comparando cada 
         # jogador com o próximo.
-        id_jogador_vencedor_rodada = reduce(definir_jogador_vencedor_rodada, self.__jogadores, None)
+        # Defini uma lista vazia como valor default para indicar o que será retornado
+        # do reduce.
+        ids_jogador_vencedor_rodada = reduce(definir_jogador_vencedor_rodada, self.__jogadores, [])
         # Icrementa a quantidade de pontos para o jogador vencedor da rodada.
-        self.__jogadores[id_jogador_vencedor_rodada].pontos += 1
 
-        print(f'\n{id_jogador_vencedor_rodada} venceu está rodada!')
+        # Trata caso a rodada tenha mais de um vencedor. Poderia usar o `reduce`
+        # como nos exemplos anteriores.
+        jogadores_venceram_rodada = ''
+        primeira_iteracao = True
+        for id_jogador_vencedor_rodada in ids_jogador_vencedor_rodada:
+            self.__jogadores[id_jogador_vencedor_rodada].pontos += 1
 
+            # Adicionar vírgula após a primeira iteração.
+            if  not primeira_iteracao:
+                jogadores_venceram_rodada += ', ' 
+
+            jogadores_venceram_rodada += f' {id_jogador_vencedor_rodada}'
+            primeira_iteracao = False
+
+        # No fim mostra os vencedores da rodada, separados por `,`:
+        #  Você,  J1,  J3 venceu está rodada!
+        print(f'\n{jogadores_venceram_rodada} venceu está rodada!')
+
+        # Mostra o placar
         self.__mostrar_placar()
 
     def __mostrar_placar(self):
@@ -436,9 +465,6 @@ class Jogo:
             raise ErroRodada("A quantidade de cartas na rodada deve ser pelo menos 1.")
         elif quantidade_cartas_rodada > self.__quantidade_maxima_cartas:
             raise ErroRodada(f'A quantidade máxima de cartas na rodada é de {self.__quantidade_maxima_cartas}.')
-        elif quantidade_cartas_rodada % 2 == 0:
-            raise ErroRodada("Não é possível escolher uma " \
-            "quantia par de cartas, escolha uma quantia ímpar para que não aconteça empate.")
         
         self.__quantidade_cartas_rodada = quantidade_cartas_rodada
 
