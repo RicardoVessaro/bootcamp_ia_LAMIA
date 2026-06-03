@@ -149,12 +149,12 @@ class Jogo:
         # Funcao definida para que seja utilizada dentro das funções utilizadas
         # no `reduce`. Como o acesso de cartas vencidas está no escopo ela está
         # também disponível dentro da função `buscar_cartas_vencidas`.
-        def buscar_cartas_vencidas(id_jogador):
-            """busca o placar da rodada atual com base no id do jogador."""
-
-            # retorna 0 caso o jogador ainda não tenha pontuado na rodada, ou 
-            # seja seu id não é chave no dicionário.
-            return 0 if id_jogador not in cartas_vencidas else cartas_vencidas[id_jogador]
+        #
+        # busca o placar da rodada atual com base no id do jogador.
+        # retorna 0 caso o jogador ainda não tenha pontuado na rodada, ou 
+        # seja seu id não é chave no dicionário.
+        buscar_cartas_vencidas = lambda id_jogador: 0 if id_jogador not in cartas_vencidas else cartas_vencidas[id_jogador]
+            
         
         # Laço que percorre de acordo com as `__quantidade_cartas_rodada` 
         # definida pelo usuário.
@@ -184,19 +184,18 @@ class Jogo:
             # Função definida aqui para poder acessar o indíce atual, este indíce
             # poderia ser passado por parâmetro, novamente é para exercitar outras
             # formas de construir o algoritmo.
-            def carta_atual(id_jogador):
-                """Recupera a carta do jogador que está sendo comparada atualmente
-                na iteração."""
-                return self.__jogadores[id_jogador].mao[i]
+            #
+            # Recupera a carta do jogador que está sendo comparada atualmente
+            # na iteração.
+            carta_atual = lambda id_jogador: self.__jogadores[id_jogador].mao[i]
 
             # Note que por conta do escopo (bloco) também temos acesso ao indíce
             # que está sendo percorrido no momento (`i`).
-            def mostrar_cartas(texto, id_jogador):
-                """Mostra a carta do jogador que está sendo comparada no momento."""
-                carta = carta_atual(id_jogador)
-                # Retorna a carta em texto concatenando com as cartas retornadas
-                # nas iterações anteriores.
-                return f'{texto}    {carta}    '
+            #
+            # Mostra a carta do jogador que está sendo comparada no momento.
+            # Retorna a carta em texto concatenando com as cartas retornadas
+            # nas iterações anteriores.
+            mostrar_cartas = lambda texto, id_jogador: f'{texto}    {carta_atual(id_jogador)}    '
                 
             # Em exemplo em que há quatro jogadores na rodada, mostra:
             #    2♠        4♣        2♦        J♥        9♥   
