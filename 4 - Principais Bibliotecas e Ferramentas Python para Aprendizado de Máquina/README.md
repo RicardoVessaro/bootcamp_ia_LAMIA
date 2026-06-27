@@ -36,6 +36,10 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [16] **24 Soluções**. Aula numpy. Disponível em: <https://drive.google.com/open?id=1HsLe9Gvi7awhJy8MZwc7JmXVYZRigDmR>. Acesso em: 27 junho 2026.
 
+[17] **25 Bem vindo à seção Pandas**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1KK6j0TK5u6rqu57WMA1QTGtGnay50bbG>. Acesso em: 27 junho 2026.
+
+[18] **26 Introdução ao Pandas**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1jz6AG-skwh-bBFQIemdfMXrv8zcEq0Gn>. Acesso em: 27 junho 2026.
+
 ### Versões
 Conda: 26.3.2
 
