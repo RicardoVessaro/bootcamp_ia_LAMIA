@@ -52,6 +52,8 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [24] **32 GroupBy. Aula pandas. Disponível em: <https://drive.google.com/open?id=1s-chVf0hcK4l3IJANvNniBsOgFBvyjFu>. Acesso em: 27 junho 2026.
 
+[25] **33 Concatenar, Juntar e Mesclar. Aula pandas. Disponível em: <https://drive.google.com/open?id=161-Ckh-3KbfY_gvxgtb7GRMZPgBc4phJ>. Acesso em: 27 junho 2026.
+
 ### Versões
 Conda: 26.3.2
 
