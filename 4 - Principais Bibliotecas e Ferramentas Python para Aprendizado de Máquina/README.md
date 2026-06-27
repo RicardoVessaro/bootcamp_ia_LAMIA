@@ -48,6 +48,7 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [22]  **30 DataFrame - Índices Multiníveis. Aula pandas. Disponível em: <https://drive.google.com/open?id=1JTp3lEmjl6rjhHPjTFC1V9qwzeMqsceq>. Acesso em: 27 junho 2026.
 
+[23] **31 Dados Ausentes. Aula pandas. Disponível em: <https://drive.google.com/open?id=1gfHKBPRG17-Lo4RDrhiXg5dF-8cHuqlL>. Acesso em: 27 junho 2026.
 
 ### Versões
 Conda: 26.3.2
