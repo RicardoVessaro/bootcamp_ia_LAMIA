@@ -46,6 +46,9 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [21]  **29 DataFrame - Seleção condicional, set_index**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1HhpdsoyNGkJnQs9a8XGyNpMigLeeNid8>. Acesso em: 27 junho 2026.
 
+[22]  **30 DataFrame - Índices Multiníveis. Aula pandas. Disponível em: <https://drive.google.com/open?id=1JTp3lEmjl6rjhHPjTFC1V9qwzeMqsceq>. Acesso em: 27 junho 2026.
+
+
 ### Versões
 Conda: 26.3.2
 
