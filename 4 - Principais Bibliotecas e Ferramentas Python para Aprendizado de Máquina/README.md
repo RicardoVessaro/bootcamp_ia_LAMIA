@@ -42,6 +42,8 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [19] **27 Series**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1oiZjXbolS8wLPz_Pd_wqfxRWtIFY6-C2>. Acesso em: 27 junho 2026.
 
+[20] **28 DataFrame - Criação e Fatiamento**. Disponível em: <https://drive.google.com/open?id=1tKDeMd8LD3Cs5qHlCPC45PBbDsjcTqNT>. Acesso em: 27 junho 2026.
+
 ### Versões
 Conda: 26.3.2
 
