@@ -40,6 +40,8 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [18] **26 Introdução ao Pandas**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1jz6AG-skwh-bBFQIemdfMXrv8zcEq0Gn>. Acesso em: 27 junho 2026.
 
+[19] **27 Series**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1oiZjXbolS8wLPz_Pd_wqfxRWtIFY6-C2>. Acesso em: 27 junho 2026.
+
 ### Versões
 Conda: 26.3.2
 
