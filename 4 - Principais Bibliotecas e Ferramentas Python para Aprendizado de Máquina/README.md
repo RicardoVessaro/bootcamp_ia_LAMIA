@@ -50,6 +50,8 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [23] **31 Dados Ausentes. Aula pandas. Disponível em: <https://drive.google.com/open?id=1gfHKBPRG17-Lo4RDrhiXg5dF-8cHuqlL>. Acesso em: 27 junho 2026.
 
+[24] **32 GroupBy. Aula pandas. Disponível em: <https://drive.google.com/open?id=1s-chVf0hcK4l3IJANvNniBsOgFBvyjFu>. Acesso em: 27 junho 2026.
+
 ### Versões
 Conda: 26.3.2
 
