@@ -18,6 +18,8 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [7] IPYTHON. **Installing the IPython kernel** Disponível em: <https://ipython.readthedocs.io/en/latest/install/kernel_install.html#kernels-for-different-environments>. Acesso em: 26 de junho de 2026.
 
+[8] NUMPY. **Indexing on ndarrays**. Disponível em: <https://numpy.org/doc/stable/user/basics.indexing.html#single-element-indexing>. Acesso em: 26 de junho de 2026.
+
 ### Versões
 Conda: 26.3.2
 
