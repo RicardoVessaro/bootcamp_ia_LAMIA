@@ -20,6 +20,8 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [8] NUMPY. **Indexing on ndarrays**. Disponível em: <https://numpy.org/doc/stable/user/basics.indexing.html#single-element-indexing>. Acesso em: 26 de junho de 2026.
 
+[9] NUMPY. **numpy.sum**. out. 2025. Disponível em: <https://numpy.org/doc/stable/reference/generated/numpy.sum.html#numpy-sum>. Acesso em 27 de junho de 2026.
+
 ### Versões
 Conda: 26.3.2
 
