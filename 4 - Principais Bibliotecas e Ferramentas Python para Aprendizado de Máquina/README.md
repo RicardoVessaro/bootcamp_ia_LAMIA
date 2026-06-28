@@ -54,6 +54,8 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [25] **33 Concatenar, Juntar e Mesclar. Aula pandas. Disponível em: <https://drive.google.com/open?id=161-Ckh-3KbfY_gvxgtb7GRMZPgBc4phJ>. Acesso em: 27 junho 2026.
 
+[26] **34 Operações. Aula pandas. Disponível em: <https://drive.google.com/open?id=1Q3xqgGOHIC6VdH9iYrqrZ8lFlK3UsjmO>. Acesso em: 27 junho 2026.
+
 ### Versões
 Conda: 26.3.2
 
