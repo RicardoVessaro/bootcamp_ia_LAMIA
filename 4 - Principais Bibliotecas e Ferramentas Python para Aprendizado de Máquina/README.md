@@ -46,15 +46,17 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [21]  **29 DataFrame - Seleção condicional, set_index**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1HhpdsoyNGkJnQs9a8XGyNpMigLeeNid8>. Acesso em: 27 junho 2026.
 
-[22]  **30 DataFrame - Índices Multiníveis. Aula pandas. Disponível em: <https://drive.google.com/open?id=1JTp3lEmjl6rjhHPjTFC1V9qwzeMqsceq>. Acesso em: 27 junho 2026.
+[22]  **30 DataFrame - Índices Multiníveis**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1JTp3lEmjl6rjhHPjTFC1V9qwzeMqsceq>. Acesso em: 27 junho 2026.
 
-[23] **31 Dados Ausentes. Aula pandas. Disponível em: <https://drive.google.com/open?id=1gfHKBPRG17-Lo4RDrhiXg5dF-8cHuqlL>. Acesso em: 27 junho 2026.
+[23] **31 Dados Ausentes. Aula pandas**. Disponível em: <https://drive.google.com/open?id=1gfHKBPRG17-Lo4RDrhiXg5dF-8cHuqlL>. Acesso em: 27 junho 2026.
 
-[24] **32 GroupBy. Aula pandas. Disponível em: <https://drive.google.com/open?id=1s-chVf0hcK4l3IJANvNniBsOgFBvyjFu>. Acesso em: 27 junho 2026.
+[24] **32 GroupBy. Aula pandas**. Disponível em: <https://drive.google.com/open?id=1s-chVf0hcK4l3IJANvNniBsOgFBvyjFu>. Acesso em: 27 junho 2026.
 
-[25] **33 Concatenar, Juntar e Mesclar. Aula pandas. Disponível em: <https://drive.google.com/open?id=161-Ckh-3KbfY_gvxgtb7GRMZPgBc4phJ>. Acesso em: 27 junho 2026.
+[25] **33 Concatenar, Juntar e Mesclar**. Aula pandas. Disponível em: <https://drive.google.com/open?id=161-Ckh-3KbfY_gvxgtb7GRMZPgBc4phJ>. Acesso em: 27 junho 2026.
 
-[26] **34 Operações. Aula pandas. Disponível em: <https://drive.google.com/open?id=1Q3xqgGOHIC6VdH9iYrqrZ8lFlK3UsjmO>. Acesso em: 27 junho 2026.
+[26] **34 Operações**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1Q3xqgGOHIC6VdH9iYrqrZ8lFlK3UsjmO>. Acesso em: 28 junho 2026.
+
+[27] **35 Entrada e Saída de dados**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1Ismj4XDvq25PO7XEJO2srEIPA0SKZDM2>. Acesso em: 28 junho 2026.
 
 ### Versões
 Conda: 26.3.2
