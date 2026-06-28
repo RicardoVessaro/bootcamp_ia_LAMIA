@@ -58,6 +58,10 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [27] **35 Entrada e Saída de dados**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1Ismj4XDvq25PO7XEJO2srEIPA0SKZDM2>. Acesso em: 28 junho 2026.
 
+[28] **36 Exercício 1 - Salários SF**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1pHPaIPzpdjrjPXxg3CDyZLM67IATaP5Q>. Acesso em: 28 junho 2026.
+
+[29] **37 Soluções - Salários SF**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1Oalk4nTjbyz4f-zLwQVMbX4EprIvLMXG>. Acesso em: 28 junho 2026.
+
 ### Versões
 Conda: 26.3.2
 
