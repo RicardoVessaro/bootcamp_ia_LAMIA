@@ -62,6 +62,10 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [29] **37 Soluções - Salários SF**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1Oalk4nTjbyz4f-zLwQVMbX4EprIvLMXG>. Acesso em: 28 junho 2026.
 
+[30] **38 Compras de E-comerce**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1A6HcnTJ6yfTgLjRDNC3Om9lOfW3OiSQn>. Acesso em: 28 junho 2026.
+
+[31] **39 Soluções Compras de E-comerce**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1A6HcnTJ6yfTgLjRDNC3Om9lOfW3OiSQn>. Acesso em: 28 junho 2026.
+
 ### Versões
 Conda: 26.3.2
 
