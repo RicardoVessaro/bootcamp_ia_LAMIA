@@ -1,6 +1,5 @@
 # Arquivo README.me referente ao card: 4 - Principais Bibliotecas e Ferramentas Python para Aprendizado de Máquina.
 
-
 ### Referências
 Referências utilizadas nos códigos das aulas ou atividades práticas. 
 
@@ -65,6 +64,16 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 [30] **38 Compras de E-comerce**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1A6HcnTJ6yfTgLjRDNC3Om9lOfW3OiSQn>. Acesso em: 28 junho 2026.
 
 [31] **39 Soluções Compras de E-comerce**. Aula pandas. Disponível em: <https://drive.google.com/open?id=1A6HcnTJ6yfTgLjRDNC3Om9lOfW3OiSQn>. Acesso em: 28 junho 2026.
+
+[32] CONDA. **conda list**. nov. 2018. Disponível em: <https://docs.conda.io/projects/conda/en/stable/commands/install.html>. Acesso em: 28 junho 2026.
+
+[33] CONDA. **conta install**. nov. 2018. Disponível em: <https://docs.conda.io/projects/conda/en/stable/commands/install.html>. Acesso em: 28 junho 2026.
+
+[34] STATUS INVEST. **Busca avançada de ações**. Disponível em: <https://statusinvest.com.br/acoes/busca-avancada>. Acesso em: 28 junho 2026.
+
+[35] GRAHAM, Benjamin. **O investidor inteligente**. 1 ed, Rio de Janeiro "Harper Colins Brasil", 2017.
+
+[36] BAZIN, Décio. **Faça fortuna com ações**. 12 ed, CLA Cultural Ltda, 2023.
 
 ### Versões
 Conda: 26.3.2
