@@ -12,3 +12,5 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 [4] **4. Activity Variation and Standard Deviation**. Aula. Disponível em: <https://drive.google.com/open?id=1VYgla9ZBxUq8UPMO2kzGHASWoMR0fyuh>. Acesso em 15 julho 2026.
 
 [5] **5. Probability Density Function; Probability Mass Function**. Aula. Disponível em: <https://drive.google.com/open?id=1zfwvew9gCdfT71vCAeO8i216SrkXcPRH>. Acesso em 16 julho 2026. 
+
+[6] **6. Common Data Distributions (Normal, Binomial, Poisson, etc)**. Aula. Disponível em: <https://drive.google.com/open?id=1ZW-e3tpQZ2xbqUM9oH8E6p2pk1HDF9iW>. Acesso em 16 julho 2026.
