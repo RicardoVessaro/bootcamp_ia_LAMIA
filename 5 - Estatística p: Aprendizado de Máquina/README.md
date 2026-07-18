@@ -23,4 +23,6 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [10] **10. Activity Covariance and Correlation**. Aula. Disponível em: <https://drive.google.com/open?id=161Lo54j5G7cvkyS-DkMRWyfwFqBKf5jW>. Acesso em 18 julho de 2026.
 
-[11] ****11. Exercise Conditional Probability**. Aula. Dinsponível em:<https://drive.google.com/open?id=1LascNV4JH0KWqmold4XSsDWqB5VOrwzt>. Acesso em 18 julho de 2026.
+[11] **11. Exercise Conditional Probability**. Aula. Disponível em:<https://drive.google.com/open?id=1LascNV4JH0KWqmold4XSsDWqB5VOrwzt>. Acesso em 18 julho de 2026.
+
+[12] **12. Exercise Solution Conditional Probability of Purchase by Age**. Aula. Disponível em: <https://drive.google.com/open?id=16138YPWoRybWyflB0wEDy6L2CQN-yKAB>. Acesso em 10 julho de 2026.
