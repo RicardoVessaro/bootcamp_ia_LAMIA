@@ -20,3 +20,5 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 [8] **8. Activity A Crash Course in matplotlib**. Aula. Disponível em: <https://drive.google.com/open?id=1NFbk8vtzYlq9S8w-EL_U8fRNzFNqa_Ui>. Acesso em 18 julho 2026.
 
 [9] **9. Activity Advanced Visualization with Seaborn**. Aula. Disponível em: <https://drive.google.com/open?id=1XI8tv__5mBF8dc895dyL21ex_NYd1la4>. Acesso em 18 julho 2026.
+
+[10] **10. Activity Covariance and Correlation**. Aula. Disponível em: <https://drive.google.com/open?id=161Lo54j5G7cvkyS-DkMRWyfwFqBKf5jW>. Acesso em 18 julho de 2026.
