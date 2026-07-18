@@ -15,4 +15,7 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 
 [6] **6. Common Data Distributions (Normal, Binomial, Poisson, etc)**. Aula. Disponível em: <https://drive.google.com/open?id=1ZW-e3tpQZ2xbqUM9oH8E6p2pk1HDF9iW>. Acesso em 16 julho 2026.
 
-[7] **7. Activity Percentiles and Moments**. Aula. Disponível em: <https://drive.google.com/open?id=1fS9-Tz-jUuv9dZc11QYeCmfWdhTXn42b>. Acesso em 18 juhlo 2026.
+[7] **7. Activity Percentiles and Moments**. Aula. Disponível em: <https://drive.google.com/open?id=1fS9-Tz-jUuv9dZc11QYeCmfWdhTXn42b>. Acesso em 18 julho 2026.
+
+[8] **8. Activity A Crash Course in matplotlib**. Aula. Disponível em: <https://drive.google.com/open?id=1NFbk8vtzYlq9S8w-EL_U8fRNzFNqa_Ui>. Acesso em 18 julho 2026.
+
