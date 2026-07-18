@@ -22,3 +22,5 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 [9] **9. Activity Advanced Visualization with Seaborn**. Aula. Disponível em: <https://drive.google.com/open?id=1XI8tv__5mBF8dc895dyL21ex_NYd1la4>. Acesso em 18 julho 2026.
 
 [10] **10. Activity Covariance and Correlation**. Aula. Disponível em: <https://drive.google.com/open?id=161Lo54j5G7cvkyS-DkMRWyfwFqBKf5jW>. Acesso em 18 julho de 2026.
+
+[11] ****11. Exercise Conditional Probability**. Aula. Dinsponível em:<https://drive.google.com/open?id=1LascNV4JH0KWqmold4XSsDWqB5VOrwzt>. Acesso em 18 julho de 2026.
