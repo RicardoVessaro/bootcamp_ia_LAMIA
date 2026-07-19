@@ -28,3 +28,7 @@ Referências utilizadas nos códigos das aulas ou atividades práticas.
 [12] **12. Exercise Solution Conditional Probability of Purchase by Age**. Aula. Disponível em: <https://drive.google.com/open?id=16138YPWoRybWyflB0wEDy6L2CQN-yKAB>. Acesso em 18 julho de 2026.
 
 [13] **13. Bayes' Theorem**. Aula. Disponível em: <https://drive.google.com/open?id=1oVYV8DCNCwZgEoBYbulVcLfRF-DZkN0F>. Acesso em 18 julho de 2026.
+
+[14] OPEN F1 ORG. **Introduction**. out. 2024. Disponível em: <https://openf1.org/docs/#introduction>. Acesso em: 18 junho 2026.
+
+[15] OPEN f1 ORG. **Api Endpoints**. out. 2024. Disponível em: <https://openf1.org/docs/#api-endpoints>. Acesso em: 18 junho 2026.
