@@ -11,3 +11,7 @@
 [4] W3 Schools. _CSS Combinators Reference_. 2026. URL: https://www.w3schools.com/cssref/css_ref_combinators.php (acesso em 31/07/2026)
 
 [5] Docs Python. _open_. _Built-in Functions_. 2026. URL: https://docs.python.org/3/library/functions.html#open (acesso em 01/08/2026)
+
+[6] Status Invest. _Ações: Cotações e Preços_. 2026. URL: https://statusinvest.com.br/acoes (acesso em 01/08/2026)
+
+[7] Read the Docs. _Custom Headers_. _Requests_. 2026. URL: https://requests.readthedocs.io/en/latest/user/quickstart/#custom-headers (acesso em 01/08/2026)
