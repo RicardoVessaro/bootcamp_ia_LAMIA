@@ -1,0 +1,16 @@
+services:
+  musicbrainz-db:
+    build: . # Aponta para o próprio Dockerfile no mesmo diretório
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - "5432:5432"
+    volumes: # Cria o volume utilizado pelo service
+      - type: bind
+        source: /Volumes/Programming/lamia/docker/card-11-pratica/data
+        target: /var/lib/postgresql/data
+        bind: 
+          selinux: Z # Garante a permissão de arquivos entre macOS e VM
+      # Arquivos mapeados para realizar o dump dos dados
+      - ./dump:/usr/src/app/dump
+      - ./mbslave.conf:/usr/src/app/mbslave.conf
