@@ -8,3 +8,4 @@ Ordem de execução dos NoteBooks
 - `transformar_dados_kworb_pratica`
 - `extrair_dados_musicbrainz_pratica`
 - `transformar_dados_musicbrainz_pratica`
+- `agrupar_dados_transformados_para_modelo_pratica`
