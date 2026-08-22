@@ -9,3 +9,4 @@ Ordem de execução dos NoteBooks
 - `extrair_dados_musicbrainz_pratica`
 - `transformar_dados_musicbrainz_pratica`
 - `agrupar_dados_transformados_para_modelo_pratica`
+- `recomendacao_musicas`
